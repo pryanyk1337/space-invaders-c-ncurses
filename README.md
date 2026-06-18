@@ -1,71 +1,71 @@
 # Space Invaders - ASCII Game
 
-Классическая аркадная игра Space Invaders с ASCII графикой на языке C.
+Classic arcade game Space Invaders with ASCII graphics written in C.
 
-## Особенности
+## Features
 
-- 🎮 5 уровней с возрастающей сложностью
-- 👾 Три типа врагов (обычные, быстрые, сильные)
-- ⏱️ Система таймера для каждого уровня
-- 💯 Система подсчета очков
-- ❤️ Система жизней
-- 🎯 Стрельба игрока и врагов
-- 🎨 ASCII графика с красивым интерфейсом
-- ⏸️ Система пауз
+- 🎮 5 levels with increasing difficulty
+- 👾 Three types of enemies (normal, fast, strong)
+- ⏱️ Timer system for each level
+- 💯 Score tracking system
+- ❤️ Lives system
+- 🎯 Player and enemy shooting
+- 🎨 ASCII graphics with beautiful interface
+- ⏸️ Pause system
 
-## Управление
+## Controls
 
-- `A` - Движение влево
-- `D` - Движение вправо
-- `SPACE` - Выстрел
-- `ESC` - Пауза
-- `Q` - Выход в меню
+- `A` - Move left
+- `D` - Move right
+- `SPACE` - Shoot
+- `ESC` - Pause
+- `Q` - Exit to menu
 
-## Компиляция и запуск
+## Compilation and Running
 
-### Используя Makefile:
+### Using Makefile:
 
 ```bash
-make          # Компиляция
-make run      # Компиляция и запуск
-make clean    # Очистка
+make          # Compile
+make run      # Compile and run
+make clean    # Clean
 ```
 
-### Вручную:
+### Manually:
 
 ```bash
 gcc -Wall -Wextra -O2 space_invaders.c -o space_invaders
 ./space_invaders
 ```
 
-## Требования
+## Requirements
 
-- GCC компилятор
-- Linux/Unix система (использует termios.h для управления терминалом)
-- Терминал с поддержкой UTF-8 для корректного отображения символов
+- GCC compiler
+- Linux/Unix system (uses termios.h for terminal control)
+- Terminal with UTF-8 support for correct character display
 
-## Игровые элементы
+## Game Elements
 
-### Враги:
-- `W` - Обычный инопланетянин (10 очков)
-- `M` - Быстрый инопланетянин (20 очков)
-- `X` - Сильный инопланетянин (30 очков)
+### Enemies:
+- `W` - Normal alien (10 points)
+- `M` - Fast alien (20 points)
+- `X` - Strong alien (30 points)
 
-### Игрок:
-- `<A>` - Ваш космический корабль
+### Player:
+- `<A>` - Your spaceship
 
-### Снаряды:
-- `|` - Выстрелы игрока
-- `*` - Выстрелы врагов
+### Projectiles:
+- `|` - Player shots
+- `*` - Enemy shots
 
-## Правила игры
+## Game Rules
 
-1. Уничтожайте всех врагов на уровне
-2. Избегайте попадания вражеских пуль
-3. Не давайте врагам достичь нижней части экрана
-4. Завершите уровень до истечения времени
-5. Переходите на следующий уровень с повышенной сложностью
+1. Destroy all enemies on the level
+2. Avoid enemy bullets
+3. Don't let enemies reach the bottom of the screen
+4. Complete the level before time runs out
+5. Progress to the next level with increased difficulty
 
-## Лицензия
+## License
 
-Свободное использование в образовательных целях.
+Free to use for educational purposes.
